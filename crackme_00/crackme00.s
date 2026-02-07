@@ -1,6 +1,6 @@
 section .data
     ; Données initialisées
-    mdp db "Zy9Px5Vn2Lk8Qt4", 10, 0
+    mdp db "Zy9Px5Vn2Lk8Qt4X", 10, 0
     good_msg db "Good Job !", 10, "0", 10, 0
     good_len equ $ - good_msg
     bad_msg db "Bad Password !", 10, "1", 10, 0
@@ -23,7 +23,7 @@ _start:
     ; Comparer input avec mdp
     mov rsi, input
     mov rdi, mdp
-    mov rcx, 16
+    mov rcx, 17
     repe cmpsb
     jne wrong
     
