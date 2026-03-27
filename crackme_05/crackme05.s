@@ -1,7 +1,7 @@
 section .data
-    msg_success: db "Good Job !", 0x0a
+    msg_success: db "Good Job!", 0x0a
     success_len: equ $ - msg_success
-    msg_fail:    db "Bad Password !", 0x0a
+    msg_fail:    db "Bad Password!", 0x0a
     fail_len:    equ $ - msg_fail
 
     sbox: db 0x63, 0xAA, 0xFB, 0x17, 0x44, 0x9E, 0x2C, 0x58
